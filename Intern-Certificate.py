@@ -40,14 +40,10 @@ for index,j in df.iterrows():
     tag = ' '.join([str(s) for s in name])
 
     #ID
-    if len(str(j['ID']))==0:
-        draw.text(xy=(260,1535),text='{}'.format(""),fill=(0,0,0),font=fontID)
-    else:
-        draw.text(xy=(260,1535),text='{}'.format(j['ID']),fill=(0,0,0),font=fontID)
+    draw.text(xy=(260,1535),text='{}'.format(j['ID']),fill=(0,0,0),font=fontID)
 
     #Special
-    if len(str(j['Special']))>0:
-        draw.text(xy=(1975,1370),text='{}'.format(j['Special']),fill=(255,140,0),font=fontSpecial)
+    draw.text(xy=(1975,1370),text='{}'.format(j['Special']),fill=(255,140,0),font=fontSpecial)
 
 
     #Domain
